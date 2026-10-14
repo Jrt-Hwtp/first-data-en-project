@@ -17,3 +17,14 @@
 ### │       ├── main.py
 ### │       └── weather.py
 ### └── tests/
+
+## command
+#### before edit or run : source .venv/bin/activate
+#### run command: PYTHONPATH=src uv run python -m data_pipeline.main
+#### example: 
+##### (first-data-en-project) ➜  first-data-en-project git:(feature/setup) ✗ PYTHONPATH=src uv run python -m data_pipeline.main
+##### --- Start --- Environment : development
+##### Polygon URL : https://api.polygon.io
+##### Fetch data of 2026-10-13...
+##### Success to fetch data! Find 2710 stocks
+##### Save file [pwd]/first-data-en-project/data/raw/stocks_2026-10-13.json successfully!
