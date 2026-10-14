@@ -28,3 +28,13 @@
 ##### Fetch data of 2026-10-13...
 ##### Success to fetch data! Find 2710 stocks
 ##### Save file [pwd]/first-data-en-project/data/raw/stocks_2026-10-13.json successfully!
+
+## IDE Debugger setup (vscode, antigravity, any vscode base ide)
+#### you can debug this project by setup launch.json in .vscode folder 
+#### add breakpoint at line need to debug
+#### press F5 (Fn + F5 on mac, F5 on window, F5 on linux) to run debugger (or click debug button in ide)
+#### if click debug button in ide then press ▶️ Run Data Pipeline
+#### if you want change default debug target_date, modify lauch.json file (eg. line 18)
+#### You can test with input date that you want to debug (eg. input : 2026-10-14)
+
+## how to run pipeline with cronjob (system task scheduler)
