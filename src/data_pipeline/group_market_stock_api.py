@@ -7,6 +7,9 @@ from data_pipeline.constants import (
     ENDPOINTS,
     HTTP_STATUS_OK,
 )
+from data_pipeline.logger import get_logger
+
+logger = get_logger(__name__)
 
 
 def fetch_daily_market_stocks(target_date: str) -> dict:
@@ -23,6 +26,7 @@ def fetch_daily_market_stocks(target_date: str) -> dict:
     
     # If HTTP Status is not 200 (e.g., 401 Key is wrong or 429 exceeded limit) raise an error immediately
     if response.status_code != HTTP_STATUS_OK:
+        logger.error("API Error (Status %s): %s", response.status_code, response.text)
         raise Exception(f"API Error (Status {response.status_code}): {response.text}")
         
     return response.json()

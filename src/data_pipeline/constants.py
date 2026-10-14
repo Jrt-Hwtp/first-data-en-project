@@ -12,6 +12,11 @@ STOCK_FILENAME_TEMPLATE = "stocks_{target_date}.json"
 DEFAULT_ENCODING = "utf-8"
 JSON_INDENT = 4
 
+# Logging Settings
+LOG_FORMAT = "%(asctime)s [%(levelname)s] %(name)s: %(message)s"
+LOG_DATE_FORMAT = "%Y-%m-%d %H:%M:%S"
+DEFAULT_LOG_FILENAME = "pipeline.log"
+
 # API Parameters & Settings
 API_TIMEOUT_SECONDS = 30
 HTTP_STATUS_OK = 200
